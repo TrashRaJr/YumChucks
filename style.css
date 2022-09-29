@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Allura');
+
+*{
+    margin : 0;
+    padding : 0;
+    font-family: 'Abel';
+}
+body{
+    background-color: black;
+    color: white;
+}
+.brand{
+    background-color: rgba(0, 0, 0, 0.74);
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    align-items: center;
+    top : 0;
+}
+.brand img{
+    margin : 10px 15px;
+    height : 55px;
+    width : 55px
+}
+.nav{
+    float: left;
+    width: 100%;;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+}
+.nav ul,li{
+    list-style: none;
+    margin-bottom: 10px;
+    margin : 10px 20px;
+    display: flex;
+    
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(23, 29, 29);
+    padding: 5px 25px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    border-style:groove;
+    border-color: rgb(14, 15, 15) ;
+    transition: background-color 0.5s;
+}
+
+
+.nav a:hover{
+    background-color: rgb(99, 112, 112);
+    background-color : rgba(249,182,3,255);
+}
+.banner-text{
+    width: 100%;
+}
+.banner-text img{
+    width: 100%;
+    margin-bottom: 20px;;
+}
+.review-heading{
+    margin : auto;
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+.review-heading h1{
+    font-family: 'Allura';
+    font-weight: light;
+    font-size: 60px;
+}
+.reviews{
+    display: flex;
+    justify-content: space-between;
+}
+.rev{
+    width : 30vw;
+    height: 200px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 20px;
+    float:left;
+    margin : 30px auto;
+    padding : 20px;
+}
+.rev img{
+    margin : 10px auto;
+}
+.rev p{
+    color: rgba(255, 255, 255, 0.726);
+}
+.clr{
+    clear: both;
+}
+#border{
+    border-right:  1px solid rgba(255, 255, 255, 0.562);
+    border-left:   1px solid rgba(255, 255, 255, 0.562);
+}
+.chef{
+    background-color: rgba(32, 32, 32, 0.486);
+}
+.chef img{
+    width: 20%;
+    margin : 20px 30px;
+}
+.chef p{
+    width : 70%;
+    font-size: 25px;
+    text-align: justify;
+    float: right;
+    margin : 50px 10px;
+    padding-right: 30px;
+    padding-top: 40px;
+}
+.footer{
+    background-color: rgba(68, 68, 68, 0.822);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 10px;
+}
+.footer img{
+    margin-right: 10px;
+}
+.menu-gallery{
+    height: 700px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-image: url('spices-banner.jpg');
+    background-size: cover;
+
+}
+.img1{
+    background-image: url("menu2.png");
+    background-size: cover;
+    background-color: white;
+    margin : auto;
+    border-radius: 10px;
+    transition: 0.5s;
+    width : 200px;
+    height: 200px;
+}
+.img1:hover{
+    margin : auto;
+    background-image: url('menu1.png');   
+}
+.img2{
+    background-image: url("camera.png");
+    background-size: cover;
+    background-color: white;
+    margin : auto;
+    border-radius: 10px;
+    transition: 0.5s;
+    width : 200px;
+    height: 200px;
+}
+.img2:hover{
+    margin : auto;
+    background-image: url('camera2.png'); 
+}
+* {
+    box-sizing:border-box
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 30px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.locations{
+    text-align: center;
+    margin: 20px;
+    font-size:x-large;
+}
+.loca{
+    margin: 50px 10px;
+}
+hr{
+    width: 70%;
+    margin : auto;
+}
+form { 
+    margin: 30px auto; 
+    width:auto;
+    font-size: x-large;
+    text-align: center;
+    }
+.name{
+    display: flex;
+    justify-content:center;
+    align-items: center;  
+    margin : 30px;
+}
+input{
+    margin : 10px;
+    color: black;
+    background: rgb(87, 87, 87);
+    height : 50px;
+    font-size: large;
+    text-align: center;
+    border : none;
+    border-radius: 10px;
+    transition: border 0.5s;
+    padding: 10px;
+}
+
+input::placeholder{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.651);
+    font-size: large;
+}
+input:hover{
+    border: 1px solid rgb(255, 255, 255);
+}
+select,option{
+    background: rgb(87, 87, 87);
+    height : 50px;
+    width : 200px;
+    border-radius: 10px;
+    color: black;
+    font-size: large;
+    margin-top: 20px;
+}
+#item{
+    margin : 40px;
+}
+label{
+    margin: 20px;
+}
+.submit{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(80, 80, 80);
+    border-radius: 5px;
+    transition: background-color 0.5s;
+    font-style: italic ;
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding : 10px 20px;
+    transition: background-color 0.5s;
+}
+
+.submit:hover{
+    background-color: rgba(249,182,3,255);
+}

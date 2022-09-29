@@ -1,0 +1,119 @@
+<html>
+<head>
+  <title>YumChucks | Catalogue</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+    <div class="brand">
+        <img src="logo.png" alt="logo" class="star">
+        <h1>YumChucks</h1>
+        <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="booking.html">Book A Table</a></li>
+        </ul>
+    </div>
+    <div class="menu-gallery">
+        <a href="#menu">
+            <div class="img1">
+                <img>
+            </div>
+        </a>
+        <a href="#gallery">
+            <div class="img2">
+                <img>
+            </div>
+        </a>
+    </div>
+    <span id="menu"><br><br></span>
+    <div class="review-heading">
+        <h1>Menu</h1>
+    </div>
+    <div>
+        <div>
+            <center><img src="menu.jpg" width="80%"></center>
+        </div> 
+    </div>
+    <span id="gallery"><br><br></span>
+    <div class="review-heading">
+        <h1>Gallery</h1>
+    </div>
+    <div class="clr"></div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="dish1.jpg" style="width:100%">
+          <div class="text">Delicious Pasta</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="dish2.jpg" style="width:100%">
+          <div class="text">Ravishing Ramen</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="dish3.jpg" style="width:100%">
+          <div class="text">Brazing Biriyani</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="dish4.jpg" style="width:100%">
+            <div class="text">Eggceptional Egg</div>
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+    <div class="clr"></div>
+    
+    <div class="footer">
+        <h2>YumChucks&copy;2022</h2>
+        <div class="images">
+            <a href="#"><img src="insta.png" width="50px"></a>
+            <a href="#"><img src="zomato.png" width="50px" style="border-radius:30px"></a>
+            <a href="#"><img src="swiggy.png" width="32px"></a>
+        </div>
+    </div> 
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
